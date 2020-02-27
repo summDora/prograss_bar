@@ -1,0 +1,113 @@
+.header,.prograss_one{
+    width: 810px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.long,.level,.levelnum{
+    position: absolute;bottom: 0px;
+    width: 100%;
+}
+.header{
+    font-size: 20px;
+    margin-top: 80px;
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 4px;
+    font-family: 'Microsoft YaHei';
+}
+
+.levelbg {
+    position: relative;
+    z-index: 1;
+    zoom: 1;
+    height: 32px;
+    line-height: 32px;
+    margin-left: 30px;
+    zoom: 1;
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: 700;
+    color: #e03a24;
+    font-style: italic;
+}
+.levelbg i{
+    position: absolute;
+    left: -30px;
+    top: 0;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    background: url(./mylevel.png) no-repeat 0 9999px;
+    background-position: left 5px;
+}
+input{
+    width:50px;
+    padding-left: 10px;
+    text-align: center;
+    line-height: 30px;
+    display: block;
+}
+.prograss_one{
+    position: relative;
+    height: 45px;
+}
+/* .bar{
+    width:100%;height: 100%;
+    position: absolute;bottom: 0px;
+} */
+.levelnum{
+    position: absolute;
+    width: 100%;height: 100%;
+}
+.long{
+    height: 12px;
+    border-radius: 6px;
+    background: rgb(218, 216, 216);
+}
+.level{
+    width:400px;
+    height: 12px;
+    border-radius: 6px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 2;
+    background: salmon;
+}
+.split{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    z-index: 3;
+    height: 12px;
+}
+.split span{
+    width:1px;
+    float: left;
+    height:12px;
+    background: white;
+    margin-left:80px ;
+}
+.number{
+    position: absolute;
+    top: 0px;
+}
+ul,li{margin:0px;padding: 0px;}
+.number ul li{
+    list-style: none;
+    width: 25px;
+    height: 28px;text-align: center;color: salmon;
+   
+    float: left;
+    margin-right: 56px;
+    vertical-align: top;
+}
+.one,.lowtwo{
+    margin-right: 43.5px !important;
+}
+.low{
+    margin-right: 0px !important;
+}
+.active{
+    background: url(./mylevel.png) no-repeat 0 9999px;
+    background-position: 0 -50px;color: white !important;
+}
