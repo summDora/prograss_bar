@@ -9,7 +9,7 @@
 }
 .header{
     font-size: 20px;
-    margin-top: 80px;
+    margin-top: 50px;
     color: #333;
     font-size: 22px;
     margin-bottom: 4px;
@@ -46,15 +46,13 @@ input{
     text-align: center;
     line-height: 30px;
     display: block;
+    margin: 30px auto;
 }
-.prograss_one{
+.prograss_one,.prograss_two{
     position: relative;
     height: 45px;
 }
-/* .bar{
-    width:100%;height: 100%;
-    position: absolute;bottom: 0px;
-} */
+
 .levelnum{
     position: absolute;
     width: 100%;height: 100%;
@@ -65,14 +63,28 @@ input{
     background: rgb(218, 216, 216);
 }
 .level{
-    width:400px;
+    width:0px;
     height: 12px;
     border-radius: 6px;
     position: absolute;
     bottom: 0px;
     z-index: 2;
     background: salmon;
+   /*  animation:mymove 2s ;
+	-webkit-animation:mymove 2s ;  */
+    background-image: linear-gradient(to right,rgb(252, 191, 184), salmon, rgb(252, 89, 71));
 }
+/* @keyframes mymove
+{
+	from {width:0px;}
+	to {width:400px;}
+}
+
+@-webkit-keyframes mymove 
+{
+	from {width:0px;}
+	to {width:400px;}
+} */
 .split{
     width: 100%;
     position: absolute;
@@ -81,7 +93,7 @@ input{
     height: 12px;
 }
 .split span{
-    width:1px;
+    width:1.1px;
     float: left;
     height:12px;
     background: white;
@@ -95,8 +107,8 @@ ul,li{margin:0px;padding: 0px;}
 .number ul li{
     list-style: none;
     width: 25px;
-    height: 28px;text-align: center;color: salmon;
-   
+    height: 28px;text-align: center;
+    color: salmon;
     float: left;
     margin-right: 56px;
     vertical-align: top;
@@ -110,4 +122,25 @@ ul,li{margin:0px;padding: 0px;}
 .active{
     background: url(./mylevel.png) no-repeat 0 9999px;
     background-position: 0 -50px;color: white !important;
+}
+.prograss_two{
+    width: 810px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.prograss_two .split{
+    padding: 1px 0px;
+    height: 10px;
+}
+.prograss_two .split span{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin-left: 71px;
+}
+.prograss_two .number ul li{
+    color: rgb(5, 201, 201);
+}
+.prograss_two .level{
+    background-image: linear-gradient(to right,rgb(160, 253, 253), rgb(110, 228, 228),rgb(6, 155, 155));
 }
